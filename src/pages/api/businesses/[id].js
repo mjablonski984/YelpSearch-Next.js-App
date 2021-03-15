@@ -7,7 +7,10 @@ export default async function handler({ query: {id} }, res) {
             `${baseUrl}${id}`,
             {
               headers: {
-                Authorization: `Bearer ${apiKey}`
+                'Authorization': `Bearer ${apiKey}`,
+                'accept': 'application/json',
+                'x-requested-with': 'xmlhttprequest',
+                'Access-Control-Allow-Origin':'*',
               }
             }
           )
@@ -16,8 +19,10 @@ export default async function handler({ query: {id} }, res) {
           `${baseUrl}${id}/reviews`,
           {
             headers: {
-              Authorization: `Bearer ${apiKey}`,
-              'Access-Control-Allow-Origin': '*'
+              'Authorization': `Bearer ${apiKey}`,
+              'accept': 'application/json',
+              'x-requested-with': 'xmlhttprequest',
+              'Access-Control-Allow-Origin':'*',
             }
           }
         );
