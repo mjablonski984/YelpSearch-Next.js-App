@@ -16,7 +16,8 @@ export default async function handler({ query }, res) {
           searchUrl,
           {
             headers: {
-              Authorization: `Bearer ${apiKey}`
+              Authorization: `Bearer ${apiKey}`,
+              'Access-Control-Allow-Origin': '*'
             }
           }
         )
