@@ -1,0 +1,132 @@
+.search_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 1rem;
+  background-image: 
+    linear-gradient(to bottom, var(--background-rgba), var(--background-rgba)),
+     url('/img/search-bg-v.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search_bar_sort_options{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.sort_option {
+  cursor: pointer;
+  margin: 0 .75rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: color 0.25s;
+  list-style: none;
+}
+
+.sort_option:hover {
+  color: var(--text-color-secondary);
+}
+
+.active,
+.active:hover {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.search_bar_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_bar_fields .search_bar_input {
+  width: 100%;
+  padding: 0.66rem 1rem;
+  font-size: var(--font-small);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  background-color: var(--background-color-light);
+  border: 1px solid var(--text-color-secondary);
+  border-radius: var(--border-radius);
+}
+
+.search_bar_fields .search_bar_input:focus {
+  outline: none;
+}
+
+.search_bar_fields .search_bar_input:last-child {
+  margin-right: 0;
+}
+
+.search_bar_submit {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color-light);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.search_bar_submit:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-dark);
+}
+
+.search_bar_submit_icon {
+  width: 16px;
+  height: 16px;
+} 
+
+.search_bar_submit_span {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .search_bar {
+    background-image: 
+      linear-gradient(to bottom, var(--background-rgba), var(--background-rgba)),
+      url('/img/search-bg-h.jpg');
+  }
+
+  .sort_option {
+    margin: 0 1rem;
+  }
+
+  .search_bar_fields {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .search_bar_fields .search_bar_input {
+    margin: 0;
+    max-width:400px;
+    border-radius: 0;
+  }
+
+  .search_bar_fields .search_bar_input:first-of-type {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  .search_bar_submit {
+    max-width: fit-content;
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .search_bar_submit .search_bar_submit_span {
+  display: none;
+}
+
+}

@@ -1,0 +1,51 @@
+.container {
+    padding: 2rem 1rem 4rem;
+}
+
+.terms_header {
+    text-align: center;
+    font-size: var(--font-large);
+    color: var(--primary-color);
+}
+
+.terms_list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    align-items: stretch; 
+    padding: 1rem 0;
+}
+
+.term_card {
+    padding: 1rem;
+    border: 1px solid var(--background-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: all 200ms ease-in-out;
+}
+
+.term_card:hover {
+    border: 1px solid var(--background-color-light);
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.term_name {
+    font-size: var(--font-large);
+}
+
+.term_icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 800px) {
+
+.terms_list {
+    grid-template-columns: repeat(4,1fr);
+}
+
+}

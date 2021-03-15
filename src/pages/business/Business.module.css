@@ -1,0 +1,179 @@
+.business {
+  padding: 2rem 1rem;
+}
+
+.business_name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.business_header {
+  padding: 10rem 1rem 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.business_header p {
+  margin: .5rem 0;
+}
+
+.flex_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.rating {
+  line-height: 1rem;
+  color: var(--primary-color);
+  font-size: var(--font-large);
+  font-weight: 600;
+  margin: 0 .5rem 0 0;
+}
+
+.icon {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+}
+
+.business_section {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--text-color-secondary);
+}
+
+.business_section:last-of-type {
+  border-bottom: none;
+}
+
+.business_section_name {
+  font-size: var(--font-large);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.business_flex_section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.business_location {
+  padding-bottom: 1rem;
+}
+
+.business_hours {
+  padding-top: 2rem;
+  border-top: 1px solid var(--text-color-secondary);
+}
+
+.business_hours h3 {
+  margin-top: 0;
+}
+
+.business_hours_table {
+  max-width: 500px;
+  width: 100%;
+}
+
+.business_hours_table_row {
+  border: none;
+  text-align: left;
+}
+
+.business_hours_table_row td {
+  padding: 8px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  max-height: 50vh;
+  padding-bottom: 1rem;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery_image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.review_card {
+  padding: 1rem;
+  border: 1px solid var(--background-color-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 0 auto 2rem;
+}
+
+.review_card_header {
+  display: flex;
+  border-bottom: 1px solid var(--text-color-secondary);
+}
+
+.review_card_header_info {
+  padding-left: 1rem;
+}
+
+.review_card_header_info p {
+  margin-top: 0;
+}
+
+.user_rating {
+  line-height: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0 .5rem 0 0;
+}
+
+.align_bottom {
+  vertical-align: bottom;
+}
+
+.text_bold {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+
+  .business_flex_section {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .flex_container {
+    flex-direction: row;
+  }
+
+  .business_location {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .business_hours {
+    width: 50%;
+    padding-left: 2rem;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .gallery_image {
+    width: 32%;
+    max-height: 250px;
+    margin: 0 0.5rem 1rem;
+  }
+
+  .review_card {
+    width: 32%;
+    margin: 0 .5rem 2rem;
+  }
+}
